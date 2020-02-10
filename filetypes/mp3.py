@@ -5,7 +5,7 @@ from errors import MetadataError
 
 class MP3(Audio):
 
-    def get_tags(self):
+    def get_all_tags(self):
         return self.tags
 
     def get_title(self):
@@ -56,11 +56,11 @@ class MP3(Audio):
     def edit_track_number(self, track):
         self.tags['tracknumber'] = track
 
-    def get_album_artist(self):
+    def get_artist(self):
         return self.tags['albumartist']
 
-    def edit_album_artist(self, albumartist):
-        self.tags['albumartist'] = albumartist
+    def edit_artist(self, artist):
+        self.tags['albumartist'] = artist
 
     def save(self):
         pass

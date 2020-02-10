@@ -68,15 +68,15 @@ class Audio(ABC):
         pass
 
     @abstractmethod
-    def get_tags(self):
+    def get_all_tags(self):
         pass
 
     @abstractmethod
-    def get_album_artist(self):
+    def get_artist(self):
         pass
 
     @abstractmethod
-    def edit_album_artist(self, albumartist):
+    def edit_artist(self, artist):
         pass
 
     @abstractmethod
